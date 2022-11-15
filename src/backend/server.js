@@ -1,5 +1,5 @@
 const express = require('express');
-const cors = require('cors');
+const cors = require('./config/config');
 const mongoose = require('mongoose');
 const UserRouter = require('./routes/User/User');
 const boardRouter = require('./routes/Board/Board');
@@ -13,18 +13,7 @@ app.use('/api/user', UserRouter);
 app.use('/api/board', boardRouter);
 app.use('/api/announcement', annRouter);
 
-const whitelist = ['http://localhost:3000'];
-const corsOptions = {
-  origin: function (origin, callback) {
-    if (!origin || whitelist.indexOf(origin) !== -1) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  },
-  credentials: true,
-};
-app.use(cors(corsOptions));
+app.use(cors);
 
 app.get('/', (req, res) => {
   res.redirect('/api');

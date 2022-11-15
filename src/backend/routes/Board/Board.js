@@ -1,6 +1,8 @@
 const express = require('express');
 const boardRouter = express.Router();
 const model = require('../../models/board');
+const cors = require('../../config/config');
+boardRouter.use(cors);
 
 boardRouter.get('/', (req, res) => {
   res.json({
