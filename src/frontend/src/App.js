@@ -1,20 +1,17 @@
-import { useState, useEffect } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import About from './components/About/About';
+import Faqs from './components/FAQS/Faqs';
+import Landing from './components/Landing';
 
 function App() {
-  const [state, setState] = useState();
-
-  useEffect(() => {
-    fetch('http://localhost:5500/api/user/')
-      .then((response) => response.json())
-      .then((data) => {
-        setState(data);
-      });
-  }, []);
-
   return (
-    <div>
-      <h1>{state === undefined ? 'Loading...' : state.message}</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<Landing />} />
+        <Route exact path="/about" element={<About />} />
+        <Route exact path="/faq" element={<Faqs />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

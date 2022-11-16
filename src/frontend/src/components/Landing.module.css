@@ -1,0 +1,14 @@
+.purple_sphere{
+  width: 100px;
+  height: 100px;
+  padding: 50px;
+  background: #b990d7ab;
+  position: absolute;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  top: -150px;
+  left: -50px;
+  z-index: -1;
+  box-shadow: 5px 5px 200px 200px #b990d7ab;
+}

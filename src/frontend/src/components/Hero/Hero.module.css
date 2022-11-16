@@ -1,0 +1,78 @@
+.hero{
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 3rem;
+  text-align: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero_image{
+  width: auto;
+  height: 600px;
+}
+
+.hero_text h2{
+  font-size: 78px;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.hero_text p {
+  font-size: 28px;
+  text-align: left;
+  margin-bottom: 3rem;
+}
+
+.hero_text a{
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  color: #fff;
+  padding: 1rem 3rem;
+  border-radius: 50px;
+  margin-left: 4rem;
+  transition: background .3s ease-in-out;
+}
+
+.hero_text_login{
+  background: #A17BBD;
+  border: solid 1px #A17BBD;
+}
+
+.hero_text_login:hover{
+  background: transparent;
+}
+
+.hero_text_sign{
+  border: solid 1px #A17BBD;
+}
+
+.hero_text_sign:hover{
+  background: #A17BBD;
+}
+
+.banner{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #9f7abe6a;
+  padding: .5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 15px;
+  text-align: center;
+  align-items: center;
+  height: 100px;
+}
+
+.banner h3{
+  font-size: 38px;
+  width: 350px;
+  text-transform: uppercase;
+}
+
+.banner_logo {
+  width: auto;
+  height: 75px;
+}
