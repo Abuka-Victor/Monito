@@ -12,7 +12,7 @@ export default function Navbar() {
         </h1>
       </div>
       <ul className={styles.navbar_ul}>
-        <li>
+        {/** <li>
           <Link className={styles.navbar_ul_link} to="/about">
             About
           </Link>
@@ -26,7 +26,7 @@ export default function Navbar() {
           <Link className={styles.navbar_ul_link} to="/faq">
             FAQs
           </Link>
-        </li>
+  </li> **/}
         <li>
           <Link className={styles.navbar_ul_link} to="/log">
             Log In

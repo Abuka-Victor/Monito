@@ -1,0 +1,39 @@
+.Email{
+  background: linear-gradient(180deg, #00ee77b4, #a569d5a6);
+  max-width: 800px;
+  margin: 10rem auto;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+
+.Email h2{
+  font-size: 70px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.Email form {
+  margin-bottom: 3rem;
+}
+
+.form_group{
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  gap: 1rem;
+}
+
+.form_group input{
+  padding: 1rem 2rem;
+  font-size: 26px;
+  border-radius: 10px;
+  border: none;
+}
+
+.form_group button{
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 26px;
+  background-color: #0F0621;
+  color: #fff;
+}

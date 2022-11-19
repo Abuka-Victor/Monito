@@ -1,0 +1,21 @@
+.Footer_container{
+  background: #593772;
+  padding: 2rem 6rem;
+}
+
+.Footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: #000 solid 0.5px;
+  margin-bottom: 1rem;
+}
+
+.Footer_list{
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+.Footer_foot{
+  text-align: center;
+}
