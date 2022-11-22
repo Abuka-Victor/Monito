@@ -28,12 +28,12 @@ export default function Navbar() {
           </Link>
   </li> **/}
         <li>
-          <Link className={styles.navbar_ul_link} to="/log">
+          <Link className={styles.navbar_ul_link} to={`/reg/login`}>
             Log In
           </Link>
         </li>
         <li>
-          <Link className={styles.navbar_ul_link} to="/sign">
+          <Link className={styles.navbar_ul_link} to="/reg/signup">
             Sign Up
           </Link>
         </li>
