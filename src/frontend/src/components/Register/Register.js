@@ -6,7 +6,6 @@ import Signup from './Signup_Form/Signup';
 
 function Register() {
   const [option, setOption] = useState(useParams().option);
-  console.log(option);
 
   const changeOptionHandler = () => {
     if (option === 'login') {
