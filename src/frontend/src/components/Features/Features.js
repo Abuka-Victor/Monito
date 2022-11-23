@@ -18,7 +18,7 @@ function Features() {
             Avoid clutter and easily reach your goals with dashboards that are
             easy to customize
           </p>
-          <Link to="/sign">Try for free</Link>
+          <Link to="/reg/signup">Try for free</Link>
         </div>
       </div>
       <div className={styles.Features}>
@@ -29,7 +29,7 @@ function Features() {
             Never miss another important annoucement again. Easily get notified
             on the lastest things to do.
           </p>
-          <Link to="/sign">Get Started</Link>
+          <Link to="/reg/signup">Get Started</Link>
         </div>
         <div className={styles.left}>
           <img src={checkbook} alt="" />

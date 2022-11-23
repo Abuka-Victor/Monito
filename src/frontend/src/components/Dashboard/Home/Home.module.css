@@ -1,0 +1,19 @@
+.Home{
+  display: grid;
+  grid-template-rows: 5fr 7fr;
+  margin-left: 10px;
+}
+
+.Home div{
+  width: 100%;
+}
+
+.top h1{
+  border-bottom: 1px solid #fff;
+  padding-bottom: 1rem;
+}
+
+.bottom h2{
+  border-bottom: 1px solid #fff;
+  padding-bottom: 1rem;
+}

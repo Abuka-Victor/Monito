@@ -12,8 +12,12 @@ function Hero() {
         <div className={styles.hero_text}>
           <h2>Declutter your life</h2>
           <p>The app for busy students with tight deadlines</p>
-          <Link className={styles.hero_text_login}>Login</Link>
-          <Link className={styles.hero_text_sign}>Sign Up</Link>
+          <Link className={styles.hero_text_login} to="/reg/login">
+            Login
+          </Link>
+          <Link className={styles.hero_text_sign} to="/reg/signup">
+            Sign Up
+          </Link>
         </div>
         <div>
           <img className={styles.hero_image} src={image} alt="Hero" />

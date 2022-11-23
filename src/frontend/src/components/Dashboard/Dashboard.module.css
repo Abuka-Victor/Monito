@@ -1,0 +1,7 @@
+.Dashboard{
+  display: grid;
+  grid-template-columns: 1fr 11fr;
+  background: #0F0621;
+  width: 100vw;
+  height: 100vh;
+}

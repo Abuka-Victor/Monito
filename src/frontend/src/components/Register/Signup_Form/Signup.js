@@ -59,7 +59,7 @@ function Signup(props) {
   return (
     <div className={styles.form_container}>
       <Link to="/" className={styles.back_button}>
-        Back
+        <box-icon name="arrow-back" color="white"></box-icon>
       </Link>
       <form onSubmit={onSubmitHandler} className={styles.form}>
         <div className={styles.form_group}>
