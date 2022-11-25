@@ -1,0 +1,8 @@
+.Board{
+  background: rgba(234, 227, 25, 0.76);
+  padding: 1rem;
+  border-radius: 10px;
+  width: 300px;
+  height: 100px;
+
+}

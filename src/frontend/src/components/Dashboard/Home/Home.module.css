@@ -4,16 +4,11 @@
   margin-left: 10px;
 }
 
-.Home div{
+.Home .top, .Home .bottom{
   width: 100%;
 }
 
-.top h1{
-  border-bottom: 1px solid #fff;
-  padding-bottom: 1rem;
-}
-
-.bottom h2{
+.top h2, .bottom h2{
   border-bottom: 1px solid #fff;
   padding-bottom: 1rem;
 }
