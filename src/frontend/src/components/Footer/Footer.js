@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Footer.module.css';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -33,7 +34,7 @@ function Footer() {
           <p>TERMS AND CONDITIONS</p>
           <p>PRICING</p>
           <p>LINKS</p>
-          <p>ORGANIZATIONS</p>
+          <Link to="/dashboard">ORGANIZATION</Link>
         </div>
       </div>
       <div className={styles.Footer_foot}>
