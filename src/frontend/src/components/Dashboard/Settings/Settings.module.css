@@ -1,3 +1,74 @@
 .Settings{
   padding: 1rem;
 }
+
+.settings__container{
+  padding-left: 5rem;
+}
+
+.profile__container{
+  padding-left: 4rem;
+}
+
+.banner{
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 100px;
+  background: linear-gradient(90deg, purple, red, orange, blue);
+}
+
+.profile_buttons button{
+  border: none;
+  margin-left: 1rem;
+  padding: .5rem 2rem;
+  border-radius: 5px;
+}
+
+.cancel_btn{
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff !important;
+}
+
+.profile{
+  display: grid;
+  grid-template-columns: 1fr 11fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.profile img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: relative;
+  top: -50px;
+}
+
+.profile_right{
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+  align-items: center;
+}
+
+.form_class{
+  max-width: 70vw;
+  margin: 0 auto;
+}
+
+.form_group{
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  align-items: center;
+  border-bottom: 1px solid rgb(188, 187, 187);
+  margin-bottom: 0rem;
+  padding: .5rem;
+  max-width: 100%;
+}
+
+.form_group input{
+  font-size: 18px;
+  padding: 5px;
+}
