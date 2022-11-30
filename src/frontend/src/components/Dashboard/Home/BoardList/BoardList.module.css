@@ -1,4 +1,6 @@
 .BoardList{
   display: flex;
   gap: 1rem;
+  max-width: 100%;
+  overflow-x: scroll;
 }

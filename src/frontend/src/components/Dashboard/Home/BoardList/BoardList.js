@@ -8,6 +8,20 @@ function BoardList() {
     <div className={styles.BoardList}>
       <Board />
       <Board />
+      <Board />
+      <Board />
+      <Board />
+      <Board />
+      <Board />
+      <Board />
+      <Board />
+      <Board />
+      <Board />
+      <Board />
+      <Board />
+      <Board />
+      <Board />
+      <Board />
     </div>
   );
 }
