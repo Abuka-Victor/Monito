@@ -30,7 +30,7 @@ function Dashboard() {
       break;
 
     case 'settings':
-      userView = <Settings />;
+      userView = <Settings viewControl={setView} />;
       break;
     default:
       userView = <Home />;

@@ -22,7 +22,9 @@
   margin-left: 1rem;
   padding: .5rem 2rem;
   border-radius: 5px;
+  cursor: pointer;
 }
+
 
 .cancel_btn{
   background-color: transparent;
@@ -58,8 +60,8 @@
 }
 
 .form_group{
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 4fr 8fr;
   font-size: 20px;
   align-items: center;
   border-bottom: 1px solid rgb(188, 187, 187);

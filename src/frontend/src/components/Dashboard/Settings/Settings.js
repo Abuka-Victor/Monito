@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Settings.module.css';
 
-function Settings() {
+function Settings({ viewControl }) {
   return (
     <div className={styles.Settings}>
       <h1>Settings</h1>
@@ -20,7 +20,12 @@ function Settings() {
                   <p>Update your photo and personal details</p>
                 </div>
                 <div className={styles.profile_buttons}>
-                  <button className={styles.cancel_btn}>Cancel</button>
+                  <button
+                    onClick={() => viewControl('home')}
+                    className={styles.cancel_btn}
+                  >
+                    Cancel
+                  </button>
                   <button className={styles.save_btn}>Save</button>
                 </div>
               </div>
