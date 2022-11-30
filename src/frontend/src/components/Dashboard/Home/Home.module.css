@@ -12,3 +12,10 @@
   border-bottom: 1px solid #fff;
   padding-bottom: 1rem;
 }
+
+.time_table{
+  display: grid;
+  place-items: center;
+  height: 40vh;
+  color: rgb(176, 175, 175);
+}

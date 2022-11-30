@@ -1,0 +1,13 @@
+.Explore {
+  padding: 1rem;
+}
+
+.notif_body{
+  display: grid;
+  place-items: center;
+  height: 80vh;
+}
+
+.notif_placeholder{
+  color: rgb(195, 193, 193);
+}

@@ -1,0 +1,9 @@
+.Calendar{
+  padding: 1rem;
+}
+
+.calendar__container > div{
+  height: 50vh;
+  width: 100%;
+}
+
