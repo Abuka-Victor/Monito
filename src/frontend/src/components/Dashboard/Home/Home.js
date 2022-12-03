@@ -2,11 +2,23 @@ import React from 'react';
 import BoardList from './BoardList/BoardList';
 import styles from './Home.module.css';
 
-function Home() {
+function Home(props) {
+  let timeOfDay;
+  const hour = new Date().getHours();
+  if (hour < 12) {
+    timeOfDay = 'Morning';
+  } else if (hour >= 12 && hour < 17) {
+    timeOfDay = 'Afternoon';
+  } else {
+    timeOfDay = 'Evening';
+  }
+
   return (
     <div className={styles.Home}>
       <div className={styles.top}>
-        <h1>Good Morning Victor</h1>
+        <h1>
+          Good {timeOfDay} {props.name}
+        </h1>
         <h2>Your Boards</h2>
         <BoardList />
       </div>

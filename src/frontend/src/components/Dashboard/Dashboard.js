@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Navbar from './Navbar/Navbar';
 import styles from './Dashboard.module.css';
 import Home from './Home/Home';
@@ -6,15 +6,34 @@ import Settings from './Settings/Settings';
 import Notifications from './Notifications/Notifications';
 import Explore from './Explore/Explore';
 import Calendars from './Calendar/Calendar';
+import { useParams, useNavigate } from 'react-router-dom';
+import axios from 'axios';
+import config from '../../config';
 
 function Dashboard() {
   const [view, setView] = useState('home');
+  const [name, setName] = useState('');
+  const navigate = useNavigate();
+  const u_id = useParams().id;
+
+  useEffect(() => {
+    (async () => {
+      try {
+        const response = await axios.get(`${config.url}/api/user/${u_id}`);
+        const userName = response.data.name;
+        setName(userName);
+      } catch (e) {
+        // navigate('/reg/login');
+        console.log(e);
+      }
+    })();
+  });
 
   let userView;
 
   switch (view) {
     case 'home':
-      userView = <Home />;
+      userView = <Home name={name} />;
       break;
 
     case 'notification':

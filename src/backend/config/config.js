@@ -1,4 +1,5 @@
 const cors = require('cors');
+const mongoose = require('mongoose');
 
 const whitelist = ['http://localhost:3000'];
 const corsOptions = {
@@ -12,4 +13,11 @@ const corsOptions = {
   credentials: true,
 };
 
-module.exports = cors(corsOptions);
+mongoose.connect(
+  process.env.DBSTRING || 'mongodb://localhost:27017/monito-test'
+);
+
+module.exports = {
+  cors: cors(corsOptions),
+  mongoose: mongoose,
+};

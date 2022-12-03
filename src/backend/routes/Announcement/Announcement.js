@@ -1,8 +1,8 @@
 const express = require('express');
 const annRouter = express.Router();
 const model = require('../../models/announcement');
-const cors = require('../../config/config');
-annRouter.use(cors);
+const config = require('../../config/config');
+annRouter.use(config.cors);
 
 annRouter.get('/', (req, res) => {
   res.json({

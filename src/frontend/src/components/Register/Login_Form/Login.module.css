@@ -73,3 +73,26 @@
   text-align: center;
   width: 5%;
 }
+
+.error{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background: rgb(241, 173, 173);
+  margin: 1rem;
+  border-radius: 10px;
+}
+
+.error p, .success p {
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.success{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background: rgb(173, 246, 169);
+  margin: 1rem;
+  border-radius: 10px;
+}

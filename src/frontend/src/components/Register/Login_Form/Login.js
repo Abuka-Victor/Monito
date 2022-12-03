@@ -1,12 +1,17 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import styles from './Login.module.css';
+import axios from 'axios';
+import config from '../../../config';
 
 function Login(props) {
   const [body, setBody] = useState({
     email: '',
     password: '',
   });
+  const [loginStat, setloginStat] = useState('');
+  const [errorValue, setErrorValue] = useState('');
+  const navigate = useNavigate();
 
   const onChangeHandler = (e) => {
     if (e.target.getAttribute('type') === 'email') {
@@ -25,10 +30,35 @@ function Login(props) {
     }
   };
 
-  const onSubmitHandler = (e) => {
+  const onSubmitHandler = async (e) => {
     e.preventDefault();
-    console.log(body);
+    try {
+      const res = await axios.post(`${config.url}/api/user/auth/login`, body);
+      const user_id = res.data.id;
+      setloginStat('success');
+      navigate(`/dashboard/${user_id}`);
+    } catch (e) {
+      setloginStat('failure');
+      setErrorValue(e.response.data.message);
+    }
   };
+
+  let errTag = null;
+  if (loginStat === 'failure') {
+    errTag = (
+      <div className={styles.error}>
+        <p>{errorValue}</p>
+      </div>
+    );
+  } else if (loginStat === 'success') {
+    errTag = (
+      <div className={styles.success}>
+        <p>Successful login</p>
+      </div>
+    );
+  } else {
+    errTag = null;
+  }
 
   return (
     <div className={styles.form_container}>
@@ -36,6 +66,7 @@ function Login(props) {
         <box-icon name="arrow-back" color="white"></box-icon>
       </Link>
       <form onSubmit={onSubmitHandler} className={styles.form}>
+        {errTag}
         <div className={styles.form_group}>
           <label htmlFor="email">Email</label>
           <input
