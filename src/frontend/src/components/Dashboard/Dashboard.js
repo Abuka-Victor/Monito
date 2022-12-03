@@ -23,8 +23,7 @@ function Dashboard() {
         const userName = response.data.name;
         setName(userName);
       } catch (e) {
-        // navigate('/reg/login');
-        console.log(e);
+        navigate('/reg/login');
       }
     })();
   });
