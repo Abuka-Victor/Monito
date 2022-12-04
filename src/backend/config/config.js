@@ -1,7 +1,7 @@
 const cors = require('cors');
 const mongoose = require('mongoose');
 
-const whitelist = ['http://localhost:3000'];
+const whitelist = ['http://localhost:3000', 'https://vmonito.netlify.app'];
 const corsOptions = {
   origin: function (origin, callback) {
     if (!origin || whitelist.indexOf(origin) !== -1) {
